@@ -1,0 +1,96 @@
+.contactContainer {
+  composes: topContainer from "../../Layout.module.css";
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  width: 45%;
+  align-items: center;
+}
+
+.linkedIcons {
+  display: flex;
+  gap: 2.5vw;
+}
+
+.faIcon {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.faIcon:hover {
+  color: var(--green);
+  transition: 0.3s;
+}
+
+.contactMe img {
+  width: 100%;
+  aspect-ratio: 5/3;
+  border-radius: 2.5vw;
+  object-fit: cover;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  width: 50%;
+  align-items: center;
+}
+
+.twoInputs {
+  display: flex;
+  gap: 1.5vw;
+  width: 100%;
+}
+
+.inputField {
+  color: var(--off-black);
+  font-family: "body-text", Inter, normal;
+  text-align: center;
+  border-radius: 12px;
+  padding: 0.75em 1.5em;
+  width: 50%;
+  border: none;
+}
+
+.bigInputField {
+  composes: inputField;
+  width: 100%;
+}
+
+.inputField:focus {
+  outline: 1px solid var(--green);
+  outline-offset: 1px;
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  .formBox,
+  .contactMe {
+    width: 90%;
+  }
+
+  .formBox,
+  .twoInputs {
+    gap: 2.25vw;
+  }
+
+  .contactMe img {
+    display: none;
+  }
+}

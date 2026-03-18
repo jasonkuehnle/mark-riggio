@@ -1,0 +1,109 @@
+.bannerContainer {
+  /* composes: topContainer from "../../Layout.module.css"; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 5vw;
+  gap: 2.5vw;
+  scroll-margin-top: var(--nav-height);
+}
+
+.bannerLandingContainer {
+  /* composes: topContainer from "../../Layout.module.css"; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  background-image: url(../../assets/media/957-alex-1.png);
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 2;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.bannerContainerLeft {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  text-align: left;
+  gap: 1vw;
+}
+
+.bannerContainerLeft h1 {
+  white-space: nowrap;
+}
+
+.bannerContainerLeft h3 {
+  max-width: 80%;
+}
+
+.aboutHeader {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
+
+.aboutHeader img {
+  width: 40%;
+  border-radius: 2.5vw;
+}
+
+.aboutHeaderText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.bannerContainerLeft h1,
+.bannerContainerLeft h3 {
+  width: 100%;
+}
+
+.imgSpin {
+  width: 25%;
+  aspect-ratio: 1;
+  animation-name: spin;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerLandingContainer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutHeader {
+    width: 90%;
+  }
+
+  .aboutHeader img {
+    width: 40%;
+  }
+
+  .bannerContainer {
+    padding-bottom: 6vw;
+  }
+}

@@ -1,0 +1,140 @@
+.aboutContainer {
+  composes: topContainer from "../../Layout.module.css";
+  /* display: flex; */
+  flex-direction: column;
+  gap: 3vw;
+  /* padding-top: 72px; */
+  /* padding-bottom: 72px; */
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  /* scroll-margin-top: var(--nav-height); */
+}
+
+.aboutHeader {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
+
+.aboutHeader img {
+  width: 30%;
+  border-radius: 24px;
+}
+
+.aboutHeaderText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.aboutText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 5vw;
+  padding-right: 5vw; */
+}
+
+.aboutScrollAnimation {
+  /* opacity: 0;
+  transition: all 2s ease; */
+}
+
+.aboutBodyTextAndImage {
+  composes: aboutScrollAnimation;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2.5vw;
+}
+
+.show {
+  background-color: white;
+  /* opacity: 1; */
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.aboutFloatImage {
+  composes: aboutScrollAnimation;
+}
+
+.textAndImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.textAndImage img {
+  width: 50%;
+}
+
+.aboutSides {
+  width: 30%;
+  border-radius: 24px;
+  float: right;
+  margin-left: 2vw;
+}
+
+.aboutSidesLandscape {
+  width: 50%;
+  border-radius: 24px;
+}
+
+.aboutBodyTextAndImageFlipped {
+  composes: aboutBodyTextAndImage;
+}
+
+.aboutBodyTextAndImageFlipped img {
+  order: 1;
+}
+
+.aboutBodyTextAndImageFlipped h4 {
+  order: 0;
+}
+
+@media (max-width: 600px) {
+  .aboutBodyTextAndImage {
+    flex-direction: column;
+  }
+
+  .aboutText {
+    width: 80%;
+  }
+
+  .aboutSides {
+    width: 50%;
+  }
+  .aboutSidesLandscape {
+    width: 100%;
+    justify-self: flex-start;
+  }
+
+  .aboutBodyTextAndImageFlipped img {
+    order: 0;
+  }
+
+  .aboutBodyTextAndImageFlipped h4 {
+    order: 1;
+  }
+}

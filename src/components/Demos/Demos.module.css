@@ -1,0 +1,19 @@
+.demosContainer {
+  composes: topContainer from "../../Layout.module.css";
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+}
+
+.audioPlayer {
+  width: 50vw;
+}
+
+.demoItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}

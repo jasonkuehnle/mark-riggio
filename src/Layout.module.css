@@ -1,0 +1,14 @@
+.topContainer {
+  width: 100%;
+  display: flex;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  scroll-margin-top: var(--nav-height);
+}
+
+@media (max-width: 600px) {
+  .topContainer {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+}

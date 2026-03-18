@@ -1,0 +1,63 @@
+.navBarContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 2vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--off-black);
+}
+
+/* .navBarContainer h4,
+.navBarContainer h6 {
+  font-family: "header-text", Inter, normal;
+} */
+
+.navBarTrakLogo {
+  width: 3vw;
+  /* max-height: 80px; */
+}
+
+.navBarLeft {
+  display: flex;
+  height: 100%;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navBarLeft:hover {
+  color: var(--green);
+  /* transform: scale(1.1); */
+  transition: 0.3s;
+}
+
+.navBarLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px;
+}
+
+.navBarLogo h4,
+.navBarLogo h6 {
+  line-height: 100%;
+}
+
+.navBarLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navBarLink {
+  padding-right: 3vw;
+}
+.navBarLink:hover {
+  /* transform: scale(1.2); */
+  color: var(--green);
+  transition: 0.3s;
+}

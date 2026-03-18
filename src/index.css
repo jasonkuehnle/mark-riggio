@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "body-text";
+  font-style: normal;
+  src: url(./assets/fonts/ArchivoNarrow-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "body-text";
+  font-style: italic;
+  src: url(./assets/fonts/ArchivoNarrow-Italic-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "header-text";
+  font-style: normal;
+  src: url(./assets/fonts/Oswald-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  /* line-height: 1.5; */
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  --off-white: #f1f0f0;
+  --off-black: #0f0f0f;
+  /* --green: #07d158; */
+  --green: #2aa621;
+  --dark-grey: #5a5a5a;
+
+  --nav-height: 0px;
+
+  /* color-scheme: light dark; */
+  color: var(--off-white);
+  background-color: var(--off-black);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--off-black);
+  background-image:
+    linear-gradient(var(--dark-grey) 1px, transparent 1px),
+    linear-gradient(to right, var(--dark-grey) 1px, var(--off-black) 1px);
+  background-size: 3em 3em;
+}
+
+input,
+button,
+textarea {
+  font-size: 24px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* min-width: 320px;
+  min-height: 100vh; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "body-text", Inter, sans-serif;
+  height: max-content;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h3 {
+  -webkit-text-stroke: 0.5px var(--off-black);
+  text-stroke: 0.5px var(--off-black);
+}
+
+h1,
+h2 {
+  font-family: "header-text", Inter, sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: var(--off-black);
+    background-color: var(--off-white);
+  }
+} */
+
+@media (max-width: 1024px) {
+  :root,
+  input,
+  button,
+  textarea {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root,
+  input,
+  button,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* @media (max-width: 600px) {
+  :root {
+    font-size: 14px;
+  }
+} */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
