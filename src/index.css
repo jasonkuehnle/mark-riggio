@@ -56,6 +56,7 @@ a:visited {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* background-color: var(--dark-grey); */
   background-color: var(--off-black);
   background-image:
     linear-gradient(var(--dark-grey) 1px, transparent 1px),
@@ -95,12 +96,17 @@ p {
   letter-spacing: -0.5px;
   padding: 0px;
   margin: 0px;
+
+  -webkit-text-stroke: 0.5px black;
+  text-stroke: 0.5px black;
 }
 
 h1,
 h3 {
-  -webkit-text-stroke: 0.5px var(--off-black);
-  text-stroke: 0.5px var(--off-black);
+  -webkit-text-stroke: 0.5px black;
+  text-stroke: 0.5px black;
+  /* -webkit-text-stroke: 0.5px var(--off-black); */
+  /* text-stroke: 0.5px var(--off-black); */
 }
 
 h1,
