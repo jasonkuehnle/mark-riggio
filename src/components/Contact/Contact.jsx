@@ -46,23 +46,22 @@ export default function Contact() {
           out this form and let’s make something happen!
         </h4> */}
         <div className={styles.linkedIcons}>
-          <FaFacebookF
-            className={styles.faIcon}
-            onClick={() => {
-              window.open("https://www.google.com");
-            }}
-          />
-
           <FaInstagram
             className={styles.faIcon}
             onClick={() => {
-              window.open("https://www.google.com");
+              window.open("https://www.instagram.com/8trak_entertainment/");
             }}
           />
           <FaLinkedin
             className={styles.faIcon}
             onClick={() => {
-              window.open("https://www.google.com");
+              window.open("https://www.linkedin.com/in/mark-riggio-280734293/");
+            }}
+          />
+          <FaFacebookF
+            className={styles.faIcon}
+            onClick={() => {
+              window.open("https://www.facebook.com/mark.riggio.12");
             }}
           />
         </div>
