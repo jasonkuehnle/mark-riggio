@@ -30,8 +30,8 @@ export default function About() {
   // }, []);
   return (
     <div className={styles.aboutContainer} id="about">
+      <h2>ABOUT</h2>
       <div className={styles.aboutText}>
-        <h2>ABOUT</h2>
         <div className={styles.aboutBodyFloatImage}>
           <img className={styles.aboutSides} src={pete} alt="" />
 

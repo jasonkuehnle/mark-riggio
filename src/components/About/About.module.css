@@ -138,3 +138,9 @@
     order: 1;
   }
 }
+
+@media (hover: none) {
+  .aboutText {
+    gap: 10vw;
+  }
+}
