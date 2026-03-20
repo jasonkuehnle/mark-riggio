@@ -95,11 +95,18 @@
 
 @media (max-width: 600px) {
   .aboutHeader {
-    width: 90%;
+    width: 100%;
+    flex-direction: column;
   }
 
   .aboutHeader img {
-    width: 40%;
+    width: 50%;
+    order: 0;
+  }
+
+  .aboutHeaderText {
+    width: 75%;
+    order: 1;
   }
 
   .bannerContainer {

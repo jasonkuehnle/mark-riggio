@@ -1,6 +1,6 @@
 import styles from "./Banner.module.css";
 import Button from "../Button/Button";
-import markFace from "../../assets/media/mark-face.webp";
+import markFace from "../../assets/media/headShot.webp";
 import trakLogo from "../../assets/media/8trak-logo.webp";
 
 import { navigate } from "../../utils/navigation.js";
