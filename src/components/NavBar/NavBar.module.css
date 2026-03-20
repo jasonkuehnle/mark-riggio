@@ -82,7 +82,7 @@
   padding-top: var(--nav-height);
   gap: 5vw;
   animation: slideIn;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
 }
 
 .hamburger {
@@ -90,6 +90,11 @@
   padding: 1vw;
   font-size: 10vw;
   display: none;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 @keyframes slideIn {

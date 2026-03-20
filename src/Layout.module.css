@@ -12,3 +12,9 @@
     padding-bottom: 6vw;
   }
 }
+
+@media (hover: none) {
+  .topContainer {
+    scroll-margin-top: 0;
+  }
+}
