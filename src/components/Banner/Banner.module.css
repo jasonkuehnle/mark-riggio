@@ -105,4 +105,23 @@
   .bannerContainer {
     padding-bottom: 6vw;
   }
+  /* 
+  .bannerLandingContainer {
+    aspect-ratio: 1.5;
+  } */
+
+  .imgSpin {
+    display: none;
+  }
+
+  .bannerContainerLeft h3 {
+    max-width: 60%;
+  }
+
+  /* .bannerContainerLeft {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  } */
 }
