@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
-    console.log("API HIT");
+    console.log("HANDLER");
 
     if (req.method !== "POST") {
         console.log("Wrong method:", req.method);
