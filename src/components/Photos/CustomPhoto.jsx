@@ -46,6 +46,7 @@ export default function CustomPhoto({
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}
       ></img>
+      <h4>{caption}</h4>
     </div>
   );
 }

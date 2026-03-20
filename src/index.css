@@ -61,7 +61,8 @@ a:visited {
   background-image:
     linear-gradient(var(--dark-grey) 1px, transparent 1px),
     linear-gradient(to right, var(--dark-grey) 1px, var(--off-black) 1px);
-  background-size: 3em 3em;
+  background-size: 10vw 10vw;
+  background-position: center;
 }
 
 input,
@@ -173,6 +174,10 @@ h6 {
   button,
   textarea {
     font-size: 16px;
+  }
+
+  :root {
+    background-size: 15vw 15vw;
   }
 }
 

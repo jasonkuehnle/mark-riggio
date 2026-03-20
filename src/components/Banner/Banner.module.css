@@ -71,10 +71,7 @@
 .imgSpin {
   width: 25%;
   aspect-ratio: 1;
-  animation-name: spin;
-  animation-duration: 8000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: spin 8000ms infinite linear;
   border-radius: 100%;
   position: relative;
   z-index: 1;
