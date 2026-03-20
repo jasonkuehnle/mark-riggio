@@ -40,6 +40,7 @@ export default function CustomPhoto({
       </div>
       <img
         src={src}
+        loading="lazy"
         // width={width}
         // height={height}
         // {...imageProps}
