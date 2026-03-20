@@ -33,7 +33,11 @@ export default async function handler(req, res) {
             replyTo: email,
             to: process.env.EMAIL_USER,
             subject: `New Contact Form Submission`,
-            text: `Message: ${message}`,
+            text: `First Name: ${firstName} \n
+            Last Name: ${lastName} \n
+            Email: ${email} \n
+            Phone: ${phone} \n
+            Message: ${message}`,
         });
 
         console.log("EMAIL SENT:", info);
