@@ -80,7 +80,7 @@
   align-items: flex-end;
   justify-content: flex-start;
   padding: 5vw;
-  padding-top: var(--nav-height);
+  padding-top: calc(var(--nav-height) + 5vw);
   gap: 5vw;
   animation: slideIn;
   animation-duration: 0.3s;
@@ -99,6 +99,10 @@
   transition: 0.3s;
 }
 
+.active {
+  width: scale(1.1);
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(100%);
@@ -107,6 +111,18 @@
 
   to {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInMobile {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -148,14 +164,33 @@
     position: fixed;
     top: auto;
     bottom: 0;
+    right: 0;
+    width: fit-content;
+    justify-content: center;
+    gap: 25vw;
+    border-radius: 50vw;
+    border: 1px solid var(--green);
+    margin-right: 1vw;
   }
 
   .sideBar {
     align-items: flex-end;
     justify-content: flex-end;
     padding: 5vw;
-    padding-bottom: var(--nav-height);
-    /* width: 100vw; */
+    padding-bottom: calc(var(--nav-height) + 5vw);
+    right: 0;
+    bottom: 0;
+    top: auto;
+    height: auto;
+    border-top-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    border-bottom-left-radius: 10vw;
+    border-bottom-right-radius: 10vw;
+    border: 1px solid var(--green);
+    animation: slideInMobile;
+    animation-duration: 0.3s;
+    margin-right: 1vw;
+    /* width: 50vw; */
   }
 
   .navBarLink {

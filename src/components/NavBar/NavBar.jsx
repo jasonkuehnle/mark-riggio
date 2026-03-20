@@ -95,6 +95,9 @@ export default function NavBar() {
           <FaGripLines
             ref={hamburgerRef}
             className={styles.hamburger}
+            style={{
+              transform: sideBarVisible ? "scale(1.1)" : "scale(1)",
+            }}
             onClick={() => {
               setSideBarVisible(!sideBarVisible);
             }}
