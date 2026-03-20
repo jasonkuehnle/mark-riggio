@@ -6,6 +6,35 @@ import markDrum from "../../assets/media/mark-drum.png";
 import img7240 from "../../assets/media/photoGallery/IMG_7240.webp";
 
 export default function Contact() {
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    const form = e.target;
+
+    const data = {
+      firstName: form[0].value,
+      lastName: form[1].value,
+      email: form[2].value,
+      phone: form[3].value,
+      message: form[4].value,
+    };
+
+    const res = await fetch("../../api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      alert("Message sent!");
+      form.reset();
+    } else {
+      alert("Something went wrong.");
+    }
+  }
+
   return (
     <div className={styles.contactContainer} id="contact-me">
       <div className={styles.contactMe}>
@@ -39,7 +68,13 @@ export default function Contact() {
         </div>
         <img src={img7240} alt="" />
       </div>
-      <form action="" className={styles.formBox}>
+      <form
+        action=""
+        onSubmit={(e) => {
+          handleSubmit(e);
+        }}
+        className={styles.formBox}
+      >
         <div className={styles.twoInputs}>
           <input
             type="text"
@@ -75,7 +110,7 @@ export default function Contact() {
           placeholder="Messsage*"
           required
         />
-        <Button text="LET'S CHAT!" />
+        <Button type="submit" text="LET'S CHAT!" />
       </form>
     </div>
   );

@@ -69,14 +69,14 @@ export default function NavBar() {
             >
               ABOUT
             </h4>
-            <h4
+            {/* <h4
               className={styles.navBarLink}
               onClick={() => {
                 navigate("demos");
               }}
             >
               DEMOS
-            </h4>
+            </h4> */}
             <h4
               className={styles.navBarLink}
               onClick={() => {
@@ -120,7 +120,7 @@ export default function NavBar() {
         >
           ABOUT
         </h3>
-        <h3
+        {/* <h3
           className={styles.navBarLink}
           onClick={() => {
             setSideBarVisible(false);
@@ -128,7 +128,7 @@ export default function NavBar() {
           }}
         >
           DEMOS
-        </h3>
+        </h3> */}
         <h3
           className={styles.navBarLink}
           onClick={() => {
