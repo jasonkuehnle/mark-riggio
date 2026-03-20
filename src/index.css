@@ -76,6 +76,12 @@ textarea {
   align-items: center;
 }
 
+@media (hover: none) {
+  #root {
+    padding-bottom: var(--nav-height);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
