@@ -34,8 +34,8 @@
 
 .aboutText {
   width: 70%;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   gap: 2.5vw;
   justify-content: center;
   align-items: center;
@@ -43,6 +43,9 @@
   padding-right: 5vw; */
 }
 
+.bottomText {
+  margin-top: 6vw;
+}
 .aboutScrollAnimation {
   /* opacity: 0;
   transition: all 2s ease; */
@@ -100,7 +103,10 @@
 
 .aboutSidesLandscape {
   width: 50%;
+  float: left;
   border-radius: 2.5vw;
+  margin-right: 2vw;
+  margin-top: 6vw;
 }
 
 .aboutBodyTextAndImageFlipped {

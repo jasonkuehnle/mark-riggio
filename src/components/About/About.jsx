@@ -33,22 +33,35 @@ export default function About() {
     <div className={styles.aboutContainer} id="about">
       <h2>ABOUT</h2>
       <div className={styles.aboutText}>
-        <div className={styles.aboutBodyFloatImage}>
-          <img className={styles.aboutSides} src={pete} alt="" />
+        {/* <div className={styles.aboutBodyFloatImage}>
+         
+        </div> */}
+        <img className={styles.aboutSides} src={pete} alt="" />
 
-          <h4>
-            Mark is a production specialist, audio engineer, as well as the
-            co-founder and Technical Director of Post Genre. He transformed a
-            former church into Haven, South Oakland’s first independent
-            performance space in decades, designing and building its technical
-            infrastructure. He leads production for major events like the
-            Oakland Block Party, and works in Pittsburgh as a freelance audio
-            engineer. He also runs 8 Trak Entertainment, a live production
-            company focused on lighting and audio reinforcement.
-          </h4>
-        </div>
+        <h4>
+          Mark is a production specialist, audio engineer, as well as the
+          co-founder and Technical Director of Post Genre. He transformed a
+          former church into Haven, South Oakland’s first independent
+          performance space in decades, designing and building its technical
+          infrastructure. He leads production for major events like the Oakland
+          Block Party, and works in Pittsburgh as a freelance audio engineer. He
+          also runs 8 Trak Entertainment, a live production company focused on
+          lighting and audio reinforcement.
+        </h4>
 
-        <div className={styles.aboutBodyTextAndImage}>
+        <img className={styles.aboutSidesLandscape} src={dscF7376} alt="" />
+
+        <h4 className={styles.bottomText}>
+          Whether he is touring as a drummer, designing AV systems for national
+          conferences, or hosting events in Pittsburgh, Mark is dedicated to
+          transforming creative concepts into unforgettable live experiences.
+        </h4>
+
+        {/* <div className={styles.aboutBodyFloatImage}>
+         
+        </div> */}
+
+        {/* <div className={styles.aboutBodyTextAndImage}>
           <img className={styles.aboutSidesLandscape} src={dscF7376} alt="" />
           <h4>
             Whether he is touring as a drummer, designing AV systems for
@@ -56,7 +69,7 @@ export default function About() {
             dedicated to transforming creative concepts into unforgettable live
             experiences.
           </h4>
-        </div>
+        </div> */}
 
         {/* <div className={styles.aboutBodyTextAndImage}>
           <img
