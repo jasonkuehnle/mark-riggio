@@ -49,11 +49,7 @@ export default function About() {
         </div>
 
         <div className={styles.aboutBodyTextAndImage}>
-          <img
-            className={styles.aboutSidesLandscape}
-            src={blockParty992}
-            alt=""
-          />
+          <img className={styles.aboutSidesLandscape} src={dscF7376} alt="" />
           <h4>
             Whether he is touring as a drummer, designing AV systems for
             national conferences, or hosting events in Pittsburgh, Mark is

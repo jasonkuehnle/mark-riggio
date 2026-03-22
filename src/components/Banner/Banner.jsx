@@ -22,7 +22,7 @@ export default function Banner() {
         </div>
         <img className={styles.imgSpin} src={trakLogo} alt="" />
       </div>
-      <div className={styles.aboutHeader}>
+      {/* <div className={styles.aboutHeader}>
         <div className={styles.aboutHeaderText}>
           <h4>
             <i>
@@ -35,7 +35,7 @@ export default function Banner() {
         </div>
 
         <img src={dscF7376} alt="" />
-      </div>
+      </div> */}
 
       {/* <img src={markDrum} alt="" /> */}
     </div>
