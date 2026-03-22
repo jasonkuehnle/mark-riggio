@@ -30,9 +30,9 @@
   padding-left: 5vw;
   padding-right: 5vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   /* grid-template-columns: 1fr 1fr 1fr; */
-  gap: 2vw;
+  /* gap: 2vw; */
 }
 
 .customPhoto {
@@ -59,7 +59,7 @@
 
 @media (max-width: 600px) {
   .rowPhotoAlbum {
-    gap: 4vw;
+    /* gap: 4vw; */
   }
 
   .customPhoto img {
@@ -68,6 +68,9 @@
 }
 
 @media (hover: none) {
+  .rowPhotoAlbum {
+    gap: 4vw;
+  }
   .pointer {
     display: none;
   }
