@@ -17,81 +17,86 @@ import img7276 from "../../assets/media/photoGallery/IMG_7276.webp";
 import img7638 from "../../assets/media/photoGallery/IMG_7638.webp";
 import kjw00520 from "../../assets/media/photoGallery/KJW00520.webp";
 import kjw00540 from "../../assets/media/photoGallery/KJW00540.webp";
+import nine57 from "../../assets/media/photoGallery/957-314-restauri-2-1.webp";
+import img2890 from "../../assets/media/photoGallery/IMG_2890_crowd-1.webp";
+import dn1 from "../../assets/media/photoGallery/discoNap1.webp";
+import dn2 from "../../assets/media/photoGallery/discoNap2.webp";
+import wbyHaven from "../../assets/media/photoGallery/IMG_9042.webp";
 
 import CustomPhoto from "./CustomPhoto";
 
 const images = [
   {
-    src: mg8180,
+    src: img7276,
     width: 300,
     height: 200,
-    title: "Placeholder",
+    title: "Oakland Block Party 2025",
   },
   {
     src: img3927,
     width: 300,
     height: 200,
-    title: "Placeholder",
-  },
-  {
-    src: blockParty830,
-    width: 300,
-    height: 200,
-    title: "Placeholder",
-  },
-  {
-    src: blockParty992,
-    width: 300,
-    height: 200,
-    title: "Placeholder",
+    title: "Wild Blue Yonder Tour 2024",
   },
   {
     src: dsc8038,
     width: 300,
     height: 200,
-    title: "Placeholder",
+    title: "Lighting design for the Discover Church",
   },
   {
-    src: dsc8365,
+    src: img2890,
     width: 300,
     height: 200,
-    title: "Placeholder",
+    title: "Madeline Jo & Friends at HAVEN, 2025",
+  },
+  {
+    src: dn1,
+    width: 300,
+    height: 200,
+    title: "Disco Nap at HAVEN, 2025",
+  },
+  {
+    src: nine57,
+    width: 300,
+    height: 200,
+    title: "9fiftyseven at HAVEN, 2025",
   },
   {
     src: dsc8390,
     width: 300,
     height: 200,
-    title: "Placeholder",
-  },
-  {
-    src: dsc9285,
-    width: 300,
-    height: 200,
-    title: "Placeholder",
-  },
-  {
-    src: img7276,
-    width: 300,
-    height: 200,
-    title: "Placeholder",
+    title: "Oakland Block Party 2025",
   },
   {
     src: img7638,
     width: 300,
     height: 200,
-    title: "Placeholder",
+    title: "Oakland Block Party 2025",
+  },
+  {
+    src: dn2,
+    width: 300,
+    height: 200,
+    title: "Disco Nap at HAVEN, 2025",
   },
   {
     src: kjw00520,
     width: 300,
     height: 200,
-    title: "Placeholder",
+    title: "Lighting design for the Discover Church",
   },
   {
-    src: kjw00540,
+    src: dsc9285,
     width: 300,
     height: 200,
-    title: "Placeholder",
+    title: "Oakland Block Party 2025",
+  },
+  {
+    src: wbyHaven,
+    width: 300,
+    height: 200,
+    title: "Wild Blue Yonder at HAVEN, 2025",
   },
 ];
 

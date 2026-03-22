@@ -33,26 +33,12 @@ function App() {
 
   return (
     <>
-      {/* <Button text="PRIMARY BUTTON" />
-      <h1>Header 1</h1>
-      <h2>Header 2</h2>
-      <h3>Header 3</h3>
-      <h4>Header 4</h4>
-      <h5>Header 5</h5>
-      <h6>Header 6</h6>
-      <p>Paragraph</p> */}
       <NavBar />
       <Banner />
       <About />
-      <Demos />
+      {/* <Demos /> */}
       {/* <PastWork /> */}
       <Photos />
-      {/* <CustomPhoto
-        src={mg8180}
-        width={300}
-        height={200}
-        caption="Custom Caption"
-      /> */}
       <Contact />
     </>
   );

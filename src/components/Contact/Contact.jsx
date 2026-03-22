@@ -3,7 +3,8 @@ import styles from "./Contact.module.css";
 import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 import markDrum from "../../assets/media/mark-drum.png";
-import img7240 from "../../assets/media/photoGallery/IMG_7240.webp";
+import dscF7376 from "../../assets/media/DSCF7376.webp";
+import blockPartyWBY from "../../assets/media/photoGallery/8-20 Block Party-746_alex-j-1.webp";
 
 export default function Contact() {
   async function handleSubmit(e) {
@@ -65,7 +66,7 @@ export default function Contact() {
             }}
           />
         </div>
-        <img src={img7240} alt="" />
+        <img src={blockPartyWBY} alt="" />
       </div>
       <form
         action=""

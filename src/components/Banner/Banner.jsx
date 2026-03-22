@@ -11,7 +11,7 @@ export default function Banner() {
       <div className={styles.bannerLandingContainer}>
         <div className={styles.bannerContainerLeft}>
           <h1>MARK RIGGIO</h1>
-          <h3>Audio engineer, production specialist, something else</h3>
+          <h3>Audio engineer, production specialist</h3>
           <Button
             text="CONTACT ME"
             onClick={() => {
@@ -25,12 +25,10 @@ export default function Banner() {
         <div className={styles.aboutHeaderText}>
           <h4>
             <i>
-              {" "}
-              Creativity at my core, passion for team leadership and
-              institutional organization. I love taking concepts and creating
-              them into unforgettable experiences. From perfecting the most
-              intimate show to dialing in arena sound, I live to create
-              unforgettable moments.
+              With a lifelong passion for event production, I love taking
+              concepts and creating them into unforgettable experiences. From
+              perfecting the most intimate show to dialing in arena sound, I
+              live to create unforgettable moments no matter the scale.
             </i>
           </h4>
         </div>
