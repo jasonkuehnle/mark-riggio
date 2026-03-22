@@ -76,6 +76,8 @@
 
 .aboutBodyFloatImage {
   composes: aboutScrollAnimation;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 .textAndImage {
@@ -114,6 +116,9 @@
 }
 
 @media (max-width: 600px) {
+  /* .aboutBodyFloatImage {
+    display:
+  } */
   .aboutBodyTextAndImage {
     flex-direction: column;
   }

@@ -37,20 +37,32 @@ export default function About() {
           <img className={styles.aboutSides} src={pete} alt="" />
 
           <h4>
-            Mark Riggio is a production specialist, technical director, audio
-            engineer, and community builder. As the Co-founder and Technical
-            Director of Post Genre, Mark transformed a former church into Haven,
-            South Oakland’s first independent performance space in decades. He
-            designed and built the technical infrastructure for this former
-            church-turned-venue, overseeing events that have welcomed over 6,000
-            attendees in their first year alone. Beyond the gear, Mark is a team
-            builder. He helps manage a dedicated crew of over 50 volunteers,
-            fostering a culture of collaboration that sustained Haven through
-            over 100+ events in its first year.
+            Mark is a production specialist, audio engineer, as well as the
+            co-founder and Technical Director of Post Genre. He transformed a
+            former church into Haven, South Oakland’s first independent
+            performance space in decades, designing and building its technical
+            infrastructure. He leads production for major events like the
+            Oakland Block Party, and works in Pittsburgh as a freelance audio
+            engineer. He also runs 8 Trak Entertainment, a live production
+            company focused on lighting and audio reinforcement.
           </h4>
         </div>
 
         <div className={styles.aboutBodyTextAndImage}>
+          <img
+            className={styles.aboutSidesLandscape}
+            src={blockParty992}
+            alt=""
+          />
+          <h4>
+            Whether he is touring as a drummer, designing AV systems for
+            national conferences, or hosting events in Pittsburgh, Mark is
+            dedicated to transforming creative concepts into unforgettable live
+            experiences.
+          </h4>
+        </div>
+
+        {/* <div className={styles.aboutBodyTextAndImage}>
           <img
             className={styles.aboutSidesLandscape}
             src={blockParty992}
@@ -65,9 +77,9 @@ export default function About() {
             operates 8 Trak Entertainment, a live production company
             specializing in lighting and audio reinforcement
           </h4>
-        </div>
+        </div> */}
 
-        <div className={styles.aboutBodyTextAndImageFlipped}>
+        {/* <div className={styles.aboutBodyTextAndImageFlipped}>
           <img className={styles.aboutSidesLandscape} src={dscF7376} alt="" />
           <h4>
             Whether he is on tour as a drummer, designing AV systems for
@@ -75,7 +87,7 @@ export default function About() {
             dedicated to creating professional, never-forget experiences for
             audiences across the country.
           </h4>
-        </div>
+        </div> */}
       </div>
     </div>
   );

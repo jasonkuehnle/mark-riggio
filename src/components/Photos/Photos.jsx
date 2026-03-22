@@ -22,6 +22,10 @@ import img2890 from "../../assets/media/photoGallery/IMG_2890_crowd-1.webp";
 import dn1 from "../../assets/media/photoGallery/discoNap1.webp";
 import dn2 from "../../assets/media/photoGallery/discoNap2.webp";
 import wbyHaven from "../../assets/media/photoGallery/IMG_9042.webp";
+import kjw00887 from "../../assets/media/photoGallery/KJW00887.webp";
+import dn3 from "../../assets/media/photoGallery/IMG_0768-1.webp";
+import nine572 from "../../assets/media/photoGallery/957_117_tierney-1.webp";
+import lfo from "../../assets/media/photoGallery/_MG_8075-Enhanced-NR.webp";
 
 import CustomPhoto from "./CustomPhoto";
 
@@ -42,19 +46,7 @@ const images = [
     src: dsc8038,
     width: 300,
     height: 200,
-    title: "Lighting design for the Discover Church",
-  },
-  {
-    src: img2890,
-    width: 300,
-    height: 200,
-    title: "Madeline Jo & Friends at HAVEN, 2025",
-  },
-  {
-    src: dn1,
-    width: 300,
-    height: 200,
-    title: "Disco Nap at HAVEN, 2025",
+    title: "The Discover Church",
   },
   {
     src: nine57,
@@ -63,10 +55,16 @@ const images = [
     title: "9fiftyseven at HAVEN, 2025",
   },
   {
-    src: dsc8390,
+    src: dn1,
     width: 300,
     height: 200,
-    title: "Oakland Block Party 2025",
+    title: "Disco Nap at HAVEN, 2025",
+  },
+  {
+    src: img2890,
+    width: 300,
+    height: 200,
+    title: "Madeline Jo & Friends at HAVEN, 2025",
   },
   {
     src: img7638,
@@ -75,22 +73,28 @@ const images = [
     title: "Oakland Block Party 2025",
   },
   {
-    src: dn2,
+    src: nine572,
+    width: 300,
+    height: 200,
+    title: "9fiftyseven at HAVEN, 2026",
+  },
+  {
+    src: dn3,
     width: 300,
     height: 200,
     title: "Disco Nap at HAVEN, 2025",
   },
   {
-    src: kjw00520,
+    src: kjw00887,
     width: 300,
     height: 200,
-    title: "Lighting design for the Discover Church",
+    title: "The Discover Church",
   },
   {
-    src: dsc9285,
+    src: lfo,
     width: 300,
     height: 200,
-    title: "Oakland Block Party 2025",
+    title: "Live from Oakland, 2023",
   },
   {
     src: wbyHaven,

@@ -1,7 +1,8 @@
 import styles from "./Banner.module.css";
 import Button from "../Button/Button";
-import markFace from "../../assets/media/headShot.webp";
 import trakLogo from "../../assets/media/8trak-logo.webp";
+import blockPartyWBY from "../../assets/media/photoGallery/8-20 Block Party-746_alex-j-1.webp";
+import dscF7376 from "../../assets/media/DSCF7376.webp";
 
 import { navigate } from "../../utils/navigation.js";
 
@@ -11,9 +12,9 @@ export default function Banner() {
       <div className={styles.bannerLandingContainer}>
         <div className={styles.bannerContainerLeft}>
           <h1>MARK RIGGIO</h1>
-          <h3>Audio engineer, production specialist</h3>
+          <h3>Techincal director, Audio engineer, production specialist</h3>
           <Button
-            text="CONTACT ME"
+            text="LET'S WORK TOGETHER!"
             onClick={() => {
               navigate("contact-me");
             }}
@@ -33,7 +34,7 @@ export default function Banner() {
           </h4>
         </div>
 
-        <img src={markFace} alt="" />
+        <img src={dscF7376} alt="" />
       </div>
 
       {/* <img src={markDrum} alt="" /> */}

@@ -5,6 +5,8 @@ import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import markDrum from "../../assets/media/mark-drum.png";
 import dscF7376 from "../../assets/media/DSCF7376.webp";
 import blockPartyWBY from "../../assets/media/photoGallery/8-20 Block Party-746_alex-j-1.webp";
+import markFace from "../../assets/media/headShot.webp";
+import havenLogo from "../../assets/media/haven-church-logo.png";
 
 export default function Contact() {
   async function handleSubmit(e) {
@@ -40,12 +42,8 @@ export default function Contact() {
     <div className={styles.contactContainer} id="contact-me">
       <div className={styles.contactMe}>
         <h2>CONTACT ME</h2>
-        {/* <img src={markDrum} alt="" /> */}
-        {/* <h4>
-          Looking for a lighting designer, audio engineer, stage hands, or a
-          weed guy? I am currently open for bookings through 2026. Please fill
-          out this form and let’s make something happen!
-        </h4> */}
+
+        <img className={styles.contactMeImg} src={markFace} alt="" />
         <div className={styles.linkedIcons}>
           <FaInstagram
             className={styles.faIcon}
@@ -65,8 +63,15 @@ export default function Contact() {
               window.open("https://www.facebook.com/mark.riggio.12");
             }}
           />
+          <img
+            className={styles.faIcon}
+            src={havenLogo}
+            onClick={() => {
+              window.open("https://www.havenvenue.com");
+            }}
+            alt=""
+          />
         </div>
-        <img src={blockPartyWBY} alt="" />
       </div>
       <form
         action=""
