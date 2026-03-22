@@ -1,8 +1,8 @@
 .topContainer {
   width: 100%;
   display: flex;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
   scroll-margin-top: var(--nav-height);
 }
 
