@@ -40,10 +40,11 @@ export default function Contact() {
 
   return (
     <div className={styles.contactContainer} id="contact-me">
-      <div className={styles.contactMe}>
-        <h2>CONTACT ME</h2>
+      <h2>LET'S WORK TOGETHER</h2>
 
+      <div className={styles.contactMeSmallWidth}>
         <img className={styles.contactMeImg} src={markFace} alt="" />
+
         <div className={styles.linkedIcons}>
           <FaInstagram
             className={styles.faIcon}
@@ -73,50 +74,86 @@ export default function Contact() {
           />
         </div>
       </div>
-      <form
-        action=""
-        onSubmit={(e) => {
-          handleSubmit(e);
-        }}
-        className={styles.formBox}
-      >
-        <div className={styles.twoInputs}>
-          <input
-            type="text"
-            className={styles.inputField}
-            placeholder="First Name*"
-            required
-          />
-          <input
-            type="text"
-            className={styles.inputField}
-            placeholder="Last Name*"
-            required
-          />
-        </div>
-        <div className={styles.twoInputs}>
-          <input
-            type="email"
-            className={styles.inputField}
-            placeholder="Email*"
-            required
-          />
-          <input
-            type="tel"
-            className={styles.inputField}
-            placeholder="Phone Number"
-          />
-        </div>
 
-        <textarea
-          name=""
-          id=""
-          className={styles.bigInputField}
-          placeholder="Messsage*"
-          required
-        />
-        <Button type="submit" text="LET'S CHAT!" />
-      </form>
+      <div className={styles.contactHorizontal}>
+        <div className={styles.contactMe}>
+          <img className={styles.contactMeImg} src={markFace} alt="" />
+          <div className={styles.linkedIcons}>
+            <FaInstagram
+              className={styles.faIcon}
+              onClick={() => {
+                window.open("https://www.instagram.com/8trak_entertainment/");
+              }}
+            />
+            <FaLinkedin
+              className={styles.faIcon}
+              onClick={() => {
+                window.open(
+                  "https://www.linkedin.com/in/mark-riggio-280734293/",
+                );
+              }}
+            />
+            <FaFacebookF
+              className={styles.faIcon}
+              onClick={() => {
+                window.open("https://www.facebook.com/mark.riggio.12");
+              }}
+            />
+            <img
+              className={styles.faIcon}
+              src={havenLogo}
+              onClick={() => {
+                window.open("https://www.havenvenue.com");
+              }}
+              alt=""
+            />
+          </div>
+        </div>
+        <form
+          action=""
+          onSubmit={(e) => {
+            handleSubmit(e);
+          }}
+          className={styles.formBox}
+        >
+          <div className={styles.twoInputs}>
+            <input
+              type="text"
+              className={styles.inputField}
+              placeholder="First Name*"
+              required
+            />
+            <input
+              type="text"
+              className={styles.inputField}
+              placeholder="Last Name*"
+              required
+            />
+          </div>
+          <div className={styles.twoInputs}>
+            <input
+              type="email"
+              className={styles.inputField}
+              placeholder="Email*"
+              required
+            />
+            <input
+              type="tel"
+              className={styles.inputField}
+              placeholder="Phone Number"
+            />
+          </div>
+
+          <textarea
+            name=""
+            id=""
+            className={styles.bigInputField}
+            placeholder="Messsage*"
+            required
+          />
+          <Button type="submit" text="LET'S CHAT!" />
+        </form>
+      </div>
     </div>
   );
 }

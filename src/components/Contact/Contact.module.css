@@ -1,23 +1,46 @@
 .contactContainer {
   composes: topContainer from "../../Layout.module.css";
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 3vw;
   /* align-items: flex-start; */
+  flex-direction: column;
   align-items: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  justify-content: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.contactHorizontal {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 5vw;
+  align-items: flex-start;
+  padding: 0px;
 }
 
 .contactMe {
   display: flex;
   flex-direction: column;
   gap: 2vw;
-  width: 45%;
+  width: fit-content;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .linkedIcons {
   display: flex;
   gap: 2.5vw;
+}
+
+.contactMeSmallWidth {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
 }
 
 .faIcon {
@@ -37,7 +60,7 @@
 .contactMeImg {
   /* width: 100%; */
   /* aspect-ratio: 5/3; */
-  width: 60%;
+  width: 25vw;
   border-radius: 2.5vw;
   object-fit: cover;
 }
@@ -46,7 +69,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
-  width: 50%;
+  width: 40%;
   align-items: center;
 }
 
@@ -85,8 +108,7 @@
     gap: 5vw;
   }
 
-  .formBox,
-  .contactMe {
+  .formBox {
     width: 90%;
   }
 
@@ -95,8 +117,12 @@
     gap: 2.25vw;
   }
 
-  .contactMeImg {
+  .contactMe {
     display: none;
+  }
+
+  .contactMeSmallWidth {
+    display: flex;
   }
 
   .bigInputField {

@@ -12,7 +12,7 @@ export default function Banner() {
       <div className={styles.bannerLandingContainer}>
         <div className={styles.bannerContainerLeft}>
           <h1>MARK RIGGIO</h1>
-          <h3>Techincal director, Audio engineer, production specialist</h3>
+          <h3>Techincal director, Audio engineer, Production specialist</h3>
           <Button
             text="LET'S WORK TOGETHER!"
             onClick={() => {

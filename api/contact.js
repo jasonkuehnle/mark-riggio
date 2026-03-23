@@ -29,7 +29,7 @@ export default async function handler(req, res) {
         console.log("Transporter created");
 
         const info = await transporter.sendMail({
-            from: process.env.EMAIL_USER,
+            from: email,
             replyTo: email,
             to: process.env.EMAIL_USER,
             subject: `New Contact Form Submission`,
