@@ -27,7 +27,7 @@ import dn3 from "../../assets/media/photoGallery/IMG_0768-1.webp";
 import nine572 from "../../assets/media/photoGallery/957_117_tierney-1.webp";
 import lfo from "../../assets/media/photoGallery/_MG_8075-Enhanced-NR.webp";
 
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/mark-riggio-resume.pdf";
 import CustomPhoto from "./CustomPhoto";
 
 const images = [
