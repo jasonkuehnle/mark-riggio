@@ -8,6 +8,16 @@
   padding-right: 5vw;
 }
 
+a {
+  color: var(--off-white);
+  font-family: "body-text";
+}
+
+a:hover {
+  color: var(--green);
+  transition: 0.3s;
+}
+
 .pointer {
   position: fixed;
   top: 0;
