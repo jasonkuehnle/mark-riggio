@@ -6,8 +6,9 @@
   gap: 2.5vw;
 }
 
-.audioPlayer {
+.youtube {
   width: 50vw;
+  aspect-ratio: 16/9;
 }
 
 .demoItem {
@@ -16,4 +17,16 @@
   justify-content: center;
   align-items: center;
   gap: 2vw;
+}
+
+@media (max-width: 768px) {
+  .youtube {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .youtube {
+    width: 70vw;
+  }
 }
