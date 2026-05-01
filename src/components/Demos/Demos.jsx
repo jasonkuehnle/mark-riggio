@@ -9,7 +9,7 @@ import spanishNights from "../../assets/demos/spanishNights.mp3";
 export default function Demos() {
   return (
     <div className={styles.demosContainer} id="demos">
-      <h2>DEMOS</h2>
+      <h2>AUDIO DEMOS</h2>
 
       <iframe
         // width="560"
@@ -19,41 +19,53 @@ export default function Demos() {
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        allowFullScreen="true"
         // style={{ width: "50vw", aspectRatio: "16/9" }}
         className={styles.youtube}
       ></iframe>
 
       <div className={styles.demoItem}>
-        <h4>Giovanni X The Draft Live at 123 Pleasant St.</h4>
+        <h4>
+          Giovanni X The Draft Live at 123 Pleasant St.<br></br>Recording, Mix
+          Engineer
+        </h4>
         <audio className={styles.audioPlayer} controls>
           <source src={dirtyLove} type="audio/mp3"></source>
         </audio>
       </div>
 
       <div className={styles.demoItem}>
-        <h4>Wild Blue Yonder Live Rehearsal</h4>
+        <h4>
+          Wild Blue Yonder Live Rehearsal<br></br>Recording, Mix Engineer, Drums
+        </h4>
         <audio className={styles.audioPlayer} controls>
           <source src={gameOfLife} type="audio/mp3"></source>
         </audio>
       </div>
 
       <div className={styles.demoItem}>
-        <h4>The Alfieri Bagnato Riggio Pasta Co.</h4>
+        <h4>
+          The Alfieri Bagnato Riggio Pasta Co.<br></br>Mix Engineer, Drums
+        </h4>
         <audio className={styles.audioPlayer} controls>
           <source src={pasta} type="audio/mp3"></source>
         </audio>
       </div>
 
       <div className={styles.demoItem}>
-        <h4>Wild Blue Yonder - Spanish Nights</h4>
+        <h4>
+          Wild Blue Yonder - Selected Recordings<br></br>Recording, Mix
+          Engineer, Drums
+        </h4>
         <audio className={styles.audioPlayer} controls>
           <source src={spanishNights} type="audio/mp3"></source>
         </audio>
       </div>
 
       <div className={styles.demoItem}>
-        <h4>Social Cig Live at HAVEN</h4>
+        <h4>
+          Social Cig Live at HAVEN<br></br>FOH, Mix Engineer
+        </h4>
         <audio className={styles.audioPlayer} controls>
           <source src={socialCig} type="audio/mp3"></source>
         </audio>
