@@ -36,7 +36,7 @@ function App() {
       <NavBar />
       <Banner />
       <About />
-      <Demos />
+      {/* <Demos /> */}
       {/* <PastWork /> */}
       <Photos />
       <Contact />

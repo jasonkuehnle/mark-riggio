@@ -109,9 +109,9 @@ export default function Photos() {
   return (
     <div className={styles.photosContainer} id="photos">
       <h2>PORTFOLIO</h2>
-      <a href={resume} target="_blank">
+      {/* <a href={resume} target="_blank">
         <u>Resume</u>
-      </a>
+      </a> */}
       <div className={styles.rowPhotoAlbum}>
         {images.map((image) => {
           return <CustomPhoto src={image.src} caption={image.title} />;
